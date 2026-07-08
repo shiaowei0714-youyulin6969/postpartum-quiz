@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>妳現在最需要哪一種產後溫柔修復？｜蒔日大地女人</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+  :root{
+    --pink-cream: #fdf5f2;
+    --pink-light: #f8e3e0;
+    --pink: #eec3c4;
+    --pink-deep: #d99a9e;
+    --gold: #c8a463;
+    --gold-light: #f1e6cf;
+    --gold-deep: #a9803f;
+    --text-main: #5a4038;
+    --text-soft: #8a6b62;
+    --white: #fffdfb;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    font-family:'Noto Sans TC', sans-serif;
+    color: var(--text-main);
+    background: linear-gradient(180deg, var(--pink-cream) 0%, var(--white) 40%, var(--pink-cream) 100%);
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ font-family:'Noto Serif TC', serif; font-weight:500; letter-spacing:0.03em; }
+  .page{ max-width:480px; margin:0 auto; min-height:100vh; padding:0 0 60px; overflow-x:hidden; }
+  .screen{ display:none; padding:64px 28px 40px; text-align:center; }
+  .screen.active{ display:block; }
+
+  .icon{ font-size:34px; color: var(--pink-deep); margin-bottom:20px; }
+  .eyebrow{ font-size:13px; letter-spacing:0.3em; color: var(--gold-deep); margin-bottom:16px; }
+  .intro h1{ font-size:26px; margin:0 0 24px; color: var(--text-main); }
+  .intro p{ font-size:14.5px; color: var(--text-soft); margin:0 0 16px; }
+  .intro .meta{ font-size:12.5px; color: var(--gold-deep); letter-spacing:0.1em; margin:28px 0 32px; }
+
+  .btn{
+    display:inline-block;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color: var(--white);
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    padding:15px 42px;
+    border-radius:999px;
+    font-size:15px;
+    letter-spacing:0.08em;
+    box-shadow:0 8px 20px rgba(169,128,63,0.25);
+    font-family:'Noto Sans TC', sans-serif;
+  }
+  .btn.ghost{
+    background:transparent;
+    color: var(--gold-deep);
+    border:1.5px solid var(--gold);
+    box-shadow:none;
+  }
+
+  /* 進度條 */
+  .progress-wrap{ margin-bottom:36px; }
+  .progress-label{ font-size:12.5px; color: var(--text-soft); letter-spacing:0.1em; margin-bottom:10px; }
+  .progress-bar{ height:6px; background: var(--pink-light); border-radius:999px; overflow:hidden; }
+  .progress-fill{ height:100%; background: linear-gradient(90deg, var(--pink-deep) 0%, var(--gold) 100%); border-radius:999px; transition: width .35s ease; }
+
+  .q-text{ font-size:20px; line-height:1.7; margin:0 0 32px; color: var(--text-main); min-height:110px; }
+  .options{ display:flex; flex-direction:column; gap:12px; }
+  .option-btn{
+    display:block;
+    width:100%;
+    text-align:left;
+    background: var(--white);
+    border:1px solid var(--pink-light);
+    border-radius:16px;
+    padding:16px 20px;
+    font-size:14.5px;
+    color: var(--text-main);
+    cursor:pointer;
+    box-shadow:0 4px 14px rgba(217,154,158,0.08);
+    font-family:'Noto Sans TC', sans-serif;
+    transition: border-color .2s ease, transform .15s ease;
+  }
+  .option-btn:hover{ border-color: var(--gold); transform: translateY(-1px); }
+  .option-btn:active{ transform: translateY(0); }
+
+  /* 結果頁 */
+  .result-kicker{ font-size:13px; letter-spacing:0.3em; color: var(--gold-deep); margin-bottom:14px; }
+  .result-title{ font-size:28px; margin:0 0 20px; color: var(--text-main); }
+  .result-desc{ font-size:14.5px; color: var(--text-soft); margin:0 0 32px; text-align:left; }
+
+  .bars{ text-align:left; margin-bottom:36px; }
+  .bar-row{ margin-bottom:16px; }
+  .bar-row .bar-label{
+    display:flex; justify-content:space-between; font-size:13px; color: var(--text-soft); margin-bottom:6px;
+  }
+  .bar-row .bar-label b{ color: var(--text-main); font-weight:700; }
+  .bar-track{ height:10px; background: var(--pink-light); border-radius:999px; overflow:hidden; }
+  .bar-fill{ height:100%; border-radius:999px; background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 100%); }
+
+  .quote-box{
+    text-align:center;
+    background: var(--gold-light);
+    border-radius:24px;
+    padding:32px 26px;
+    margin-bottom:32px;
+  }
+  .quote-box .q-label{ font-size:12px; letter-spacing:0.3em; color: var(--gold-deep); margin-bottom:14px; display:block; }
+  .quote-box p{ font-size:14.5px; color: var(--text-main); margin:0; }
+
+  .cta-block{ text-align:center; }
+  .cta-block .micro{ font-size:12px; color: var(--text-soft); margin-top:16px; }
+  .restart{ margin-top:22px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 開始頁 -->
+  <div class="screen intro active" id="screen-intro">
+    <div class="icon">♡</div>
+    <div class="eyebrow">蒔日大地女人</div>
+    <h1>妳現在最需要<br>哪一種產後溫柔修復？</h1>
+    <p>這不是要告訴妳「妳是誰」，<br>只是想陪妳看看，此刻妳的身體最靠近哪一種需要。</p>
+    <p>不用分析，跟著直覺回答就好。</p>
+    <div class="meta">共 9 題・約 2 分鐘</div>
+    <button class="btn" onclick="startQuiz()">開始測驗</button>
+  </div>
+
+  <!-- 題目頁 -->
+  <div class="screen" id="screen-quiz">
+    <div class="progress-wrap">
+      <div class="progress-label" id="progress-label">第 1 / 9 題</div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    </div>
+    <div class="q-text" id="q-text"></div>
+    <div class="options" id="q-options"></div>
+  </div>
+
+  <!-- 結果頁 -->
+  <div class="screen" id="screen-result">
+    <div class="result-kicker">妳的測驗結果</div>
+    <h2 class="result-title" id="result-title"></h2>
+    <p class="result-desc" id="result-desc"></p>
+
+    <div class="bars" id="result-bars"></div>
+
+    <div class="quote-box">
+      <span class="q-label">大地母親的話</span>
+      <p>每一種需要，都沒有對錯。<br>願妳被溫柔看見，也被溫柔修復。</p>
+    </div>
+
+    <div class="cta-block">
+      <a class="btn" href="https://lin.ee/QUs8OiT" target="_blank" rel="noopener">預約產後溫柔修復體驗</a>
+      <p class="micro">追蹤 <a href="https://www.instagram.com/shaktiyoyo6969/" target="_blank" rel="noopener" style="color:var(--gold-deep);">@shaktiyoyo6969</a>，陪妳慢慢回到自己</p>
+      <div class="restart">
+        <button class="btn ghost" onclick="restartQuiz()">重新測驗一次</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const questions = [
+    { text: "深夜孩子終於睡著，妳最想做的是？", options: [
+      { t: "找一個人抱抱我，說我做得很好", type: "embrace" },
+      { t: "躺下來，讓身體重新找回平衡感", type: "pelvis" },
+      { t: "泡杯熱茶，讓身體慢慢暖起來", type: "warmth" },
+      { t: "什麼都不做，只是深呼吸放空", type: "breath" }
+    ]},
+    { text: "走路或久站時，妳比較容易感覺到？", options: [
+      { t: "好像沒有人在背後撐著我", type: "embrace" },
+      { t: "骨盆和腰有點不穩、酸軟", type: "pelvis" },
+      { t: "下腹容易冰冷", type: "warmth" },
+      { t: "肩頸緊繃、喘不過氣", type: "breath" }
+    ]},
+    { text: "朋友問妳最近好嗎，妳心裡最想說的是？", options: [
+      { t: "好想被人好好照顧一次", type: "embrace" },
+      { t: "身體感覺鬆散，不太有支撐感", type: "pelvis" },
+      { t: "總覺得手腳冰冷、氣色不好", type: "warmth" },
+      { t: "腦子塞滿事情，靜不下來", type: "breath" }
+    ]},
+    { text: "看著鏡子裡產後的自己，妳的第一個念頭？", options: [
+      { t: "希望有人告訴我「辛苦了」", type: "embrace" },
+      { t: "腹部鬆鬆的，好像撐不住自己", type: "pelvis" },
+      { t: "整個人氣色偏虛、沒精神", type: "warmth" },
+      { t: "表情看起來很緊繃", type: "breath" }
+    ]},
+    { text: "如果現在能擁有一小時完全屬於自己的時間，妳會？", options: [
+      { t: "讓自己被溫柔包覆著，好好休息", type: "embrace" },
+      { t: "做一些簡單的伸展，找回身體的穩定", type: "pelvis" },
+      { t: "喝碗熱湯，讓身體由內而外暖起來", type: "warmth" },
+      { t: "找個安靜角落，練習深呼吸", type: "breath" }
+    ]},
+    { text: "產後這段時間，最常讓妳困擾的是？", options: [
+      { t: "覺得沒有人真正理解我的疲憊", type: "embrace" },
+      { t: "姿勢、體態好像跟以前不一樣了", type: "pelvis" },
+      { t: "容易疲倦、怕冷", type: "warmth" },
+      { t: "情緒起伏、思緒很亂", type: "breath" }
+    ]},
+    { text: "如果要選一個顏色代表現在的心情？", options: [
+      { t: "粉色——渴望溫暖陪伴", type: "embrace" },
+      { t: "大地棕——想要穩定紮根", type: "pelvis" },
+      { t: "金黃色——想要溫暖滋養", type: "warmth" },
+      { t: "淺藍色——想要平靜放空", type: "breath" }
+    ]},
+    { text: "妳希望這次修復，最先感受到的改變是？", options: [
+      { t: "感覺自己被好好接住", type: "embrace" },
+      { t: "腹部、骨盆重新找到支撐感", type: "pelvis" },
+      { t: "身體變得溫暖、有活力", type: "warmth" },
+      { t: "心情放鬆、不再緊繃", type: "breath" }
+    ]},
+    { text: "對妳來說，「修復」這兩個字最像？", options: [
+      { t: "一個溫暖的擁抱", type: "embrace" },
+      { t: "重新站穩腳步", type: "pelvis" },
+      { t: "從裡到外暖起來", type: "warmth" },
+      { t: "一口深深的呼吸", type: "breath" }
+    ]}
+  ];
+
+  const results = {
+    embrace: {
+      title: "溫柔擁抱型",
+      desc: "妳最需要的，是被好好接住。產後的疲憊，不是矯情，是身體和心一起在說想被照顧。<br><br>推薦妳：<b>溫柔束腹包覆</b>——像一個溫暖的擁抱，幫助腹部找回安全感，也讓妳感覺自己被好好陪伴著。"
+    },
+    pelvis: {
+      title: "骨盆穩定型",
+      desc: "妳最需要的，是重新找回身體的地基。<br><br>推薦妳：<b>骨盆身體評估</b>——幫助妳從根本理解自己的身體，一步步找回穩定與支撐感。"
+    },
+    warmth: {
+      title: "溫養安定型",
+      desc: "妳最需要的，是由內而外的溫暖滋養。<br><br>推薦妳：<b>子宮骨盆溫養</b>——幫助身體重新回到安定與內在支持感，不再只是硬撐。"
+    },
+    breath: {
+      title: "呼吸放鬆型",
+      desc: "妳最需要的，是允許自己慢下來。<br><br>推薦妳：<b>呼吸放鬆覺察</b>——鬆開長期緊繃的身心，把注意力重新帶回自己身上。"
+    }
+  };
+  const typeOrder = ["embrace", "pelvis", "warmth", "breath"];
+
+  let current = 0;
+  let scores = { embrace:0, pelvis:0, warmth:0, breath:0 };
+
+  function showScreen(id){
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0,0);
+  }
+
+  function startQuiz(){
+    current = 0;
+    scores = { embrace:0, pelvis:0, warmth:0, breath:0 };
+    showScreen('screen-quiz');
+    renderQuestion();
+  }
+
+  function renderQuestion(){
+    const q = questions[current];
+    document.getElementById('progress-label').textContent = `第 ${current+1} / ${questions.length} 題`;
+    document.getElementById('progress-fill').style.width = `${(current/questions.length)*100}%`;
+    document.getElementById('q-text').textContent = q.text;
+    const optWrap = document.getElementById('q-options');
+    optWrap.innerHTML = '';
+    q.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.textContent = opt.t;
+      btn.onclick = () => selectOption(opt.type);
+      optWrap.appendChild(btn);
+    });
+  }
+
+  function selectOption(type){
+    scores[type]++;
+    current++;
+    if(current < questions.length){
+      renderQuestion();
+    } else {
+      document.getElementById('progress-fill').style.width = '100%';
+      showResult();
+    }
+  }
+
+  function showResult(){
+    const total = questions.length;
+    let topType = typeOrder[0];
+    typeOrder.forEach(t => { if(scores[t] > scores[topType]) topType = t; });
+
+    document.getElementById('result-title').textContent = results[topType].title;
+    document.getElementById('result-desc').innerHTML = results[topType].desc;
+
+    const labels = { embrace:"溫柔擁抱型", pelvis:"骨盆穩定型", warmth:"溫養安定型", breath:"呼吸放鬆型" };
+    const barsWrap = document.getElementById('result-bars');
+    barsWrap.innerHTML = '';
+    typeOrder.slice().sort((a,b) => scores[b]-scores[a]).forEach(t => {
+      const pct = Math.round((scores[t]/total)*100);
+      const row = document.createElement('div');
+      row.className = 'bar-row';
+      row.innerHTML = `
+        <div class="bar-label"><span>${labels[t]}</span><b>${pct}%</b></div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      `;
+      barsWrap.appendChild(row);
+    });
+
+    showScreen('screen-result');
+  }
+
+  function restartQuiz(){
+    showScreen('screen-intro');
+  }
+</script>
+</body>
+</html>
